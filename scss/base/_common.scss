@@ -71,6 +71,10 @@ body {
   line-height: 1.71;
 
   padding-top: 80px;
+
+  body.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
