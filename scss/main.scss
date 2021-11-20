@@ -1,0 +1,35 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// BASE
+@import "./base/common";
+
+// COMPONENTS
+@import "./components/container";
+@import "./components/section";
+@import "./components/title";
+@import "./components/subtitle";
+@import "./components/contact";
+@import "./components/logo";
+@import "./components/main-nav";
+@import "./components/social-list";
+@import "./components/address";
+@import "./components/address";
+@import "./components/contact-footer";
+@import "./components/mailing__form";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/modal-btn";
+@import "./components/radioButton";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/advantage";
+@import "./layout/hero";
+@import "./layout/outwork";
+@import "./layout/ourteam";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";

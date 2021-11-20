@@ -1,0 +1,17 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.logo__part__footer {
+  color: var(--primary-white-color);
+}
+
+.footer__container__right {
+  margin-left: 93px;
+}
