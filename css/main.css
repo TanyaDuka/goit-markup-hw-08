@@ -809,6 +809,8 @@ img {
 @media screen and (min-width: 768px) {
   .advantage__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-right: -30px;
   }
 }
@@ -816,10 +818,16 @@ img {
 /*.advantage-item:not(:last-child) {
   margin-right: 50px;
 }*/
+.advantage__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .advantage__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
+  }
+  .advantage__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -830,7 +838,6 @@ img {
 
 .advantage__icon {
   fill: currentColor;
-  margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -840,7 +847,7 @@ img {
   font-weight: 700;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .advantage__subtitle {
     text-align: center;
   }
@@ -854,7 +861,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .advantage__container-icon {
-    padding: 25px 172px;
+    padding: 25px 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage__container-icon {
+    padding: 25px 100px;
   }
 }
 
@@ -943,6 +955,15 @@ img {
   background-color: #188ce8;
 }
 
+.ourwork__section {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .ourwork__section {
+    display: unset;
+  }
+}
+
 .ourwork__list {
   display: flex;
   margin-right: -30px;
@@ -982,14 +1003,32 @@ img {
 }
 
 .ourteam__list {
-  display: flex;
-  margin-right: -30px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .ourteam__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 .ourteam__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.ourteam__item .advantage-item {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .ourteam__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ourteam__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 /*.ourteam-item:not(:last-child) {

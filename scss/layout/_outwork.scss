@@ -1,3 +1,10 @@
+.ourwork__section {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: unset;
+  }
+}
+
 .ourwork__list {
   display: flex;
   margin-right: -30px;
