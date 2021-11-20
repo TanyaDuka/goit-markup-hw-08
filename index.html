@@ -19,11 +19,36 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
         <nav class='main-nav'>
             <a href="./index.html" class='logo main-nav__logo'>
                 <span lang='en'>Web</span><span lang='en' class='logo__part'>Studio</span>
             </a>
+            <ul class='site-nav'>
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link__current">Студия</a></li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            </ul>
+            
+            <ul class='contact__list'>
+                <li class='contact__item'>
+                    <a href="mailto:info@example.com" class='contact__link'>
+                        <svg class="contact__icon" width='16px' height='12px'>
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@example.com
+                    </a>
+                </li>
+                <li class='contact__item'>
+                    <a href="tel:+380991111111" class='contact__link'>
+                        <svg class="contact__icon" width='10px' height='16px'>
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 099 111 11 11
+                    </a>
+                </li>
+            </ul>
+
 
             
         </nav>
@@ -34,73 +59,84 @@
             </svg>
         </button>
         
-        <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation"></div>
-            <div class="contacts"></div>
-        </div>
-        </nav>
-        </div>
-        </div>
         
-        <main>
-            <div class="container">
-                <button type="button" data-modal-open>Открыть</button>
-            </div>
-        
-            <section class="section features">
-                <div class="container">
-                    <h2 class="section-title">Заголовок первой секции</h2>
-        
-                    <ul class="features-set">
-                        <li class="features-item">1</li>
-                        <li class="features-item">2</li>
-                        <li class="features-item">3</li>
-                        <li class="features-item">4</li>
-                        <li class="features-item">5</li>
-                        <li class="features-item">6</li>
-                    </ul>
-                </div>
-            </section>
-        
-            <section class="section reviews">
-                <div class="container">
-                    <h2 class="section-title">Заголовок второй секции</h2>
-        
-                    <ul class="reviews-set">
-                        <li class="reviews-item">1</li>
-                        <li class="reviews-item">2</li>
-                        <li class="reviews-item">3</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button type="button" data-modal-close>Закрыть</button>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-                    facilis quas unde iusto excepturi, doloremque sed cum est quis modi ex
-                    nihil natus ab impedit quisquam officia, suscipit dignissimos sit,
-                    autem velit? Praesentium ipsum eligendi molestias a corporis vitae
-                    autem dolores accusamus at eius voluptate, harum amet iusto deserunt
-                    illum!
-                </p>
-                <p>
-                    Officia voluptatibus voluptate aut tempora voluptas, repellat quos,
-                    eius officiis consequatur suscipit molestiae ipsum, ut voluptatem
-                    impedit. Nihil sint possimus obcaecati nulla tenetur quidem est,
-                    molestias nobis facilis laudantium provident ab quos molestiae
-                    voluptatibus necessitatibus nisi rem omnis? Mollitia, id corporis!
-                    Reprehenderit error rerum assumenda! Dolorem sunt consequatur ad
-                    eligendi.
-                </p>
-            </div>
-        </div>
-        </div>
     </header>
 
-  
+<main>
+    <!-- Герой -->
+    <section class='hero'>
+        <div class="container">
+            <h1 class='hero__title'>
+                Эффективные решения для вашего бизнеса
+            </h1>
+            <button type="button" class='hero__button' id='one' data-modal-open>Заказать услугу</button>
+        </div>
+    </section>
+    <section class='advantage__section section'>
+        <!-- Преимущества -->
+        <div class="container">
+            <h2 class='advantage__title title visually-hidden '>
+                Преимущества
+            </h2>
+    
+            <ul class='advantage__list'>
+                <li class='advantage__item'>
+                    <div class="advantage__container-icon">
+                        <svg class="advantage__icon" width='70' height='70'>
+                            <use href="./images/sprite.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
+                    <h3 class='advantage__subtitle subtitle'>
+                        Внимание к деталям
+                    </h3>
+                    <p class='advantage__text text'>
+                        Идейные соображения, а также начало повседневной работы по формированию позиции.
+                    </p>
+                </li>
+                <li class='advantage__item'>
+                    <div class="advantage__container-icon">
+                        <svg class="advantage__icon" width='70' height='70'>
+                            <use href="./images/sprite.svg#icon-clock"></use>
+                        </svg>
+                    </div>
+                    <h3 class='advantage__subtitle subtitle'>
+                        Пунктуальность
+                    </h3>
+                    <p class='advantage__text text'>
+                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    </p>
+                </li>
+                <li class='advantage__item'>
+                    <div class="advantage__container-icon">
+                        <svg class="advantage__icon" width='70' height='70'>
+                            <use href="./images/sprite.svg#icon-diagram"></use>
+                        </svg>
+                    </div>
+                    <h3 class='advantage__subtitle subtitle'>
+                        Планирование
+                    </h3>
+                    <p class='advantage__text text'>
+                        Равным образом консультация с широким активом в значительной степени обуславливает.
+                    </p>
+                </li>
+                <li class='advantage__item'>
+                    <div class="advantage__container-icon">
+                        <svg class="advantage__icon" width='70' height='70'>
+                            <use href="./images/sprite.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
+                    <h3 class='advantage__subtitle subtitle'>
+                        Современные технологии
+                    </h3>
+                    <p class='advantage__text text'>
+                        Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</main>
     
     
 </body>

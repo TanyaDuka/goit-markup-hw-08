@@ -1,6 +1,16 @@
 .contact__list {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // margin-left: auto;
+    margin-left: 305px;
+  }
 }
 
 .contact__link {
@@ -30,8 +40,17 @@
   justify-content: center;
 }*/
 
-.contact__item:not(:last-child) {
-  margin-right: 30px;
+.contact__item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .contact__icon {
