@@ -15,7 +15,7 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class='main-nav'>
                 <a href="./index.html" class='logo main-nav__logo'>
                     <span lang='en'>Web</span><span lang='en' class='logo__part'>Studio</span>
@@ -47,6 +47,12 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/sprite.svg#icon-menu"></use>
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu-close"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
