@@ -6,8 +6,7 @@
 @import "./base/common";
 
 // COMPONENTS
-@import "./components/modal-menu-content";
-@import "./components/modal-menu";
+
 @import "./components/container";
 @import "./components/section";
 @import "./components/title";
@@ -25,6 +24,8 @@
 @import "./components/modal-form";
 @import "./components/modal-btn";
 @import "./components/radioButton";
+@import "./components/modal-menu-content";
+//@import "./components/modal-menu";
 
 // LAYOUT
 @import "./layout/header";
