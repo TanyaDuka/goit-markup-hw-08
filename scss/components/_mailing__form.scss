@@ -1,6 +1,11 @@
 .mailing__form {
   align-items: center;
   justify-content: center;
+
+  @media screen and(min-width:767px) and(max-width:1199px) {
+    flex-direction: column;
+    display: flex;
+  }
   @media screen and(min-width:1200px) {
     display: flex;
   }
@@ -43,9 +48,11 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
+    margin-bottom: 20px;
   }
   @media screen and(min-width:1200px) {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
