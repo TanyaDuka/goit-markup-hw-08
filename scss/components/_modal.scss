@@ -10,6 +10,15 @@
   transition: transform 500ms linear;
 
   padding: 40px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__icon__close {
@@ -24,18 +33,15 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+
   text-align: center;
   color: #000000;
 
   margin-bottom: 12px;
-}
-
-.accept__policy__link {
-  font-size: 14px;
-  line-height: 1.71;
-
-  text-decoration-line: underline;
-
-  color: #2196f3;
+  @media screen and (max-width: 767px) {
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }

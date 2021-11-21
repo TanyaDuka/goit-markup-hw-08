@@ -1,8 +1,7 @@
 .modal__btn {
   border: 1px solid #999999;
   background-color: transparent;
-  width: 30px;
-  height: 30px;
+
   border-radius: 50%;
   position: absolute;
   top: 8px;
@@ -15,6 +14,14 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 30px;
+    height: 30px;
   }
 }
 
