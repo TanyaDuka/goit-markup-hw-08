@@ -886,6 +886,10 @@ img {
   color: var(--accent-color);
 }
 
+.mobile-nav__link__current {
+  color: var(--accent-color);
+}
+
 .mobile-menu__auth {
   display: block;
 }
@@ -996,7 +1000,7 @@ img {
   font-weight: 700;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .advantage__subtitle {
     text-align: center;
   }
@@ -1025,7 +1029,7 @@ img {
   padding-bottom: 118px;
   margin: 0 auto;
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index-images/hero/hero.jpg");
+  background-image: url("../images/index-images/hero/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1038,6 +1042,9 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url("../images/index-images/hero/hero-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     max-width: 768px;
   }
 }
@@ -1050,7 +1057,10 @@ img {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/index-images/hero/hero-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index-images/hero/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     max-width: 1600px;
     height: 600px;
   }
@@ -1272,7 +1282,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container__left {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1322,13 +1332,17 @@ img {
   .footer__container {
     width: 768px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
   }
 }
 
 .logo__part__footer {
   color: var(--primary-white-color);
+}
+
+.social__icon__footer {
+  fill: #fff;
 }
 
 .portfolio {

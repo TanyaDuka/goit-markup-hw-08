@@ -80,6 +80,10 @@
   }
 }
 
+.mobile-nav__link__current {
+  color: var(--accent-color);
+}
+
 .mobile-menu__auth {
   display: block;
 }
