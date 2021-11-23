@@ -4,10 +4,15 @@
     margin-bottom: 25px;
     margin-right: -8px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
   }
 }
 
